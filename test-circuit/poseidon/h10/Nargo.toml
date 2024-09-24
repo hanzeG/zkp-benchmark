@@ -1,8 +1,0 @@
-[package]
-name = "h10"
-type = "bin"
-authors = [""]
-compiler_version = ">=0.32.0"
-
-[dependencies]
-poseidon = { path = "../../../noir-poseidon/poseidon" }

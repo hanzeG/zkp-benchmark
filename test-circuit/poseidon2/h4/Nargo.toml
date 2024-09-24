@@ -1,8 +1,0 @@
-[package]
-name = "h4"
-type = "bin"
-authors = [""]
-compiler_version = ">=0.32.0"
-
-[dependencies]
-poseidon2 = { path = "../../../noir-poseidon/poseidon2" }
