@@ -1,15 +1,16 @@
+# ZKP Benchmark Toolkit
 A benchmarking tool for circuit-level performance, covering multiple popular ZK development libraries, including **Circom**, **Halo2-PSE**, **Noir**, **Boojum**, **Plonky2**, and **Plonky3**. These libraries encompass a range of widely-used ZK Layer2 technology stacks, such as **Scroll**, **Polygon**, **Aztec**, **Taiko**, and **ZKsync**.
 
-# Getting Started
+## Getting Started
 
-## Prerequisites
+### Prerequisites
 
 - Install `wget` (macOS with Homebrew: `brew install wget`)
 - Install [`Rust`](https://www.rust-lang.org/tools/install)
 - Install [`Nargo`](https://noir-lang.org/docs/getting_started/installation/)
 - Install [`Circom`](https://github.com/iden3/circom)
 
-## Benchmarking
+### Benchmarking
 
 - `git clone https://github.com/hanzeG/zkp-benchmark.git`
 - `cd zkp-benchmark`
@@ -17,7 +18,7 @@ A benchmarking tool for circuit-level performance, covering multiple popular ZK 
 
 The test script above `run_ave.bash` is by default takes the average of ten runs. The results are saved in `results_ave.json` (the single-run test script is in `run.bash`, and the results are in `results.json`).
 
-## Front-end
+### Front-end
 
 - `cd site`
 - `npm run dev`
