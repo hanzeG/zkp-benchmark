@@ -13,16 +13,17 @@ A benchmarking tool for circuit-level performance, covering multiple popular ZK 
 
 - `git clone https://github.com/hanzeG/zkp-benchmark.git`
 - `cd zkp-benchmark`
+- `/bin/bash ./scripts/run_ave.bash`
 
-Run the test script, which by default takes the average of ten runs: `/bin/bash "./scripts/run_ave.bash"`
-The results are saved in `results_ave.json` (the single-run test script is in `run.bash`, and the results are in `results.json`).
+The test script above `run_ave.bash` is by default takes the average of ten runs. The results are saved in `results_ave.json` (the single-run test script is in `run.bash`, and the results are in `results.json`).
 
 ## Front-end
 
 - `cd site`
 - `npm run dev`
+- Open http://localhost:3000 with your browser to see the result.
 
-The benchmarking results are saved in `site/src/fixtures/benchmarks.json`.
+The benchmarking results are automatically saved in `site/src/fixtures/benchmarks.json`.
 
 ## Tests
 
