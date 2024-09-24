@@ -1,0 +1,7 @@
+[package]
+name = "griffin"
+type = "lib"
+authors = ["TACEO"]
+compiler_version = ">=0.19.2"
+
+[dependencies]
