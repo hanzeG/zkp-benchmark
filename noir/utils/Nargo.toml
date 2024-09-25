@@ -1,0 +1,12 @@
+[package]
+name = "utils"
+type = "lib"
+authors = [""]
+compiler_version = ">=0.32.0"
+
+[dependencies]
+poseidon = { path = "../noir-poseidon/poseidon" }
+poseidon2 = { path = "../noir-poseidon/poseidon2" }
+# hydra = { path = "../noir-hydra" }
+griffin = { path = "../noir-griffin" }
+gmimc = { path = "../noir-GMiMC" }
