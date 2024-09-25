@@ -1,0 +1,716 @@
+[Running] bash "/Users/guohanze/Documents/zklib/zklib_circom/bench/plonk.sh"
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_0 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 1320
+linear constraints: 0
+public inputs: 0
+private inputs: 2
+public outputs: 1
+wires: 1323
+labels: 1777
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/mt_0.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/mt_0.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_js/mt_0.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_js/mt_0.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 1764
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+        0.88 real         2.42 user         0.13 sys
+           373768192  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               25163  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                   5  voluntary context switches
+                7300  involuntary context switches
+         14793686922  instructions retired
+          6127258602  cycles elapsed
+           361062016  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+        1.76 real         3.86 user         0.12 sys
+           364625920  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               23949  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                6317  involuntary context switches
+         25177030142  instructions retired
+          9568603148  cycles elapsed
+           341891968  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.43 real         0.78 user         0.05 sys
+           160219136  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11112  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2526  involuntary context switches
+          6143529996  instructions retired
+          2012599791  cycles elapsed
+           142792256  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_1 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 3960
+linear constraints: 0
+public inputs: 0
+private inputs: 4
+public outputs: 1
+wires: 3965
+labels: 5325
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/mt_1.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/mt_1.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_js/mt_1.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_js/mt_1.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 5290
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+        1.46 real         5.44 user         0.19 sys
+           522862592  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               34645  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                   5  voluntary context switches
+                7915  involuntary context switches
+         27149130220  instructions retired
+         13434341428  cycles elapsed
+           420765440  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+        5.69 real        11.50 user         0.21 sys
+           498073600  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               32956  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+               14078  involuntary context switches
+         74221401448  instructions retired
+         28175887750  cycles elapsed
+           404265664  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.38 real         0.77 user         0.05 sys
+           159383552  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11080  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                1896  involuntary context switches
+          6076550954  instructions retired
+          1983987797  cycles elapsed
+           141973120  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_2 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 9240
+linear constraints: 0
+public inputs: 0
+private inputs: 8
+public outputs: 1
+wires: 9249
+labels: 12421
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/mt_2.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/mt_2.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_js/mt_2.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_js/mt_2.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 12342
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+        2.30 real         9.49 user         0.30 sys
+           637091840  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               41568  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                   9  voluntary context switches
+               11511  involuntary context switches
+         43978893537  instructions retired
+         23383722255  cycles elapsed
+           461259840  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+       10.30 real        21.03 user         0.39 sys
+           581632000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               40313  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+               23377  involuntary context switches
+        138401861633  instructions retired
+         51593806526  cycles elapsed
+           394861376  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.44 real         0.77 user         0.05 sys
+           160530432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11132  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2220  involuntary context switches
+          6022081017  instructions retired
+          1980412847  cycles elapsed
+           143284480  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_3 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 19800
+linear constraints: 0
+public inputs: 0
+private inputs: 16
+public outputs: 1
+wires: 19817
+labels: 26613
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/mt_3.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/mt_3.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_js/mt_3.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_js/mt_3.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 26446
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+        4.18 real        17.70 user         0.58 sys
+           789315584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               85065  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                  29  voluntary context switches
+               23405  involuntary context switches
+         80272506552  instructions retired
+         43840513786  cycles elapsed
+           519817728  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+       20.36 real        39.71 user         0.69 sys
+           769966080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               77678  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+               41061  involuntary context switches
+        262995649849  instructions retired
+         97458936757  cycles elapsed
+           433691584  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.43 real         0.78 user         0.05 sys
+           159907840  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11111  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2415  involuntary context switches
+          6154859710  instructions retired
+          2007673999  cycles elapsed
+           142513856  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_4 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 40920
+linear constraints: 0
+public inputs: 0
+private inputs: 32
+public outputs: 1
+wires: 40953
+labels: 54997
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/mt_4.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/mt_4.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_js/mt_4.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_js/mt_4.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 54654
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+        7.74 real        35.51 user         1.37 sys
+          1064992768  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              171629  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                  38  voluntary context switches
+               61836  involuntary context switches
+        158497489866  instructions retired
+         87756400929  cycles elapsed
+           686528768  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+       39.27 real        76.25 user         1.27 sys
+           989331456  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              182763  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   4  voluntary context switches
+               70363  involuntary context switches
+        509427801161  instructions retired
+        186791926386  cycles elapsed
+           522851968  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.42 real         0.78 user         0.05 sys
+           158597120  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11025  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2634  involuntary context switches
+          6140538265  instructions retired
+          2004840258  cycles elapsed
+           141137344  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_5 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 83160
+linear constraints: 0
+public inputs: 0
+private inputs: 64
+public outputs: 1
+wires: 83225
+labels: 111765
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/mt_5.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/mt_5.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_js/mt_5.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_js/mt_5.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 111070
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+       15.05 real        71.56 user         3.22 sys
+          1876213760  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              331860  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                  37  voluntary context switches
+              157487  involuntary context switches
+        319229853945  instructions retired
+        178109929825  cycles elapsed
+          1017595968  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+       76.78 real       147.45 user         2.45 sys
+          1364754432  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              292840  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+              108340  involuntary context switches
+        993813390722  instructions retired
+        361020969796  cycles elapsed
+           654959040  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.42 real         0.78 user         0.05 sys
+           158269440  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10999  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2060  involuntary context switches
+          6141216672  instructions retired
+          2006248434  cycles elapsed
+           140842560  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_6 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 167640
+linear constraints: 0
+public inputs: 0
+private inputs: 128
+public outputs: 1
+wires: 167769
+labels: 225301
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/mt_6.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/mt_6.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_js/mt_6.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_js/mt_6.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 223902
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+       30.24 real       147.47 user         6.42 sys
+          2925084672  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              486736  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                 761  voluntary context switches
+              377662  involuntary context switches
+        658308922304  instructions retired
+        365534514644  cycles elapsed
+          1935543552  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+      152.40 real       289.20 user         4.48 sys
+          2493808640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              643365  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+              164088  involuntary context switches
+       1957516279073  instructions retired
+        706536901690  cycles elapsed
+          1235117632  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.43 real         0.76 user         0.04 sys
+           161005568  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11170  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                1886  involuntary context switches
+          6146076222  instructions retired
+          1953279304  cycles elapsed
+           143776064  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_7 in plonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 336600
+linear constraints: 0
+public inputs: 0
+private inputs: 256
+public outputs: 1
+wires: 336857
+labels: 452373
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/mt_7.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/mt_7.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_js/mt_7.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_js/mt_7.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating plonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Plonk constraints: 449566
+[32;22m[INFO]  [39;1msnarkJS[0m: Setup Finished
+       64.22 real       305.59 user        15.83 sys
+          5155176448  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1219865  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   3  messages sent
+                   0  messages received
+                   0  signals received
+                 115  voluntary context switches
+             1022915  involuntary context switches
+       1388157739401  instructions retired
+        763710263248  cycles elapsed
+          3598545280  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: plonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by plonk
+      312.45 real       570.98 user         8.91 sys
+          4310679552  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1140453  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   9  voluntary context switches
+              295789  involuntary context switches
+       3849277304578  instructions retired
+       1394214138677  cycles elapsed
+          2253354752  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: PLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.39 real         0.77 user         0.05 sys
+           161464320  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11180  page reclaims
+                  10  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   2  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                1828  involuntary context switches
+          6024990884  instructions retired
+          1959691962  cycles elapsed
+           144234816  peak memory footprint
+
+[Done] exited with code=0 in 768.246 seconds
+

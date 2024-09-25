@@ -1,0 +1,692 @@
+[Running] bash "/Users/guohanze/Documents/zklib/zklib_circom/bench/bench.sh"
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_0 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 678
+linear constraints: 0
+public inputs: 0
+private inputs: 2 (none belong to witness)
+public outputs: 1
+wires: 681
+labels: 3633
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/mt_0.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/mt_0.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_js/mt_0.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_js/mt_0.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		7f04d372 da70f3c4 b42bee10 5abd9d84
+		1f3e5a66 e5f09a05 aaf9fbde 2b877e42
+		22ee9873 90517b58 e0a4e2ae 0df877f3
+		8d39807f 1cb2fa6d 03c2ccf8 00056c90
+       12.28 real        19.97 user         0.22 sys
+           353632256  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               25477  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   6  messages sent
+                   0  messages received
+                   0  signals received
+                   9  voluntary context switches
+               12707  involuntary context switches
+         95976049542  instructions retired
+         49364570519  cycles elapsed
+           296131904  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by groth16
+        0.59 real         1.50 user         0.07 sys
+           222281728  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               14958  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                3776  involuntary context switches
+          9790064961  instructions retired
+          3792327910  cycles elapsed
+           204986752  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.43 real         0.74 user         0.06 sys
+           159596544  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11144  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                3205  involuntary context switches
+          5788905664  instructions retired
+          1930963409  cycles elapsed
+           142432768  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_1 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 2034
+linear constraints: 0
+public inputs: 0
+private inputs: 4 (none belong to witness)
+public outputs: 1
+wires: 2039
+labels: 10893
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/mt_1.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/mt_1.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_js/mt_1.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_js/mt_1.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		3e02bf4a b81f45a2 f3b70f4e a3dc5b31
+		6cbeff83 a818f8b3 fc6831bd 6d471ae4
+		24d69a9b 881d63a8 ce5b412b 29d12638
+		8d70106f 9142ff0c e481d875 7a291293
+       15.27 real        58.65 user         0.47 sys
+           520814592  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               37595  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   6  messages sent
+                   0  messages received
+                   0  signals received
+                 188  voluntary context switches
+               36245  involuntary context switches
+        267810820514  instructions retired
+        143534893551  cycles elapsed
+           417032064  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by groth16
+        0.92 real         2.48 user         0.09 sys
+           296796160  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               19616  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                5005  involuntary context switches
+         15226383868  instructions retired
+          6179996325  cycles elapsed
+           279369792  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.38 real         0.79 user         0.05 sys
+           158941184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11110  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                2177  involuntary context switches
+          6178939276  instructions retired
+          2044506796  cycles elapsed
+           141662272  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_2 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 4746
+linear constraints: 0
+public inputs: 0
+private inputs: 8 (none belong to witness)
+public outputs: 1
+wires: 4755
+labels: 25413
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/mt_2.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/mt_2.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_js/mt_2.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_js/mt_2.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		6ae6202c 87079f3b a0fb0833 351b068e
+		22e90614 5fef95da f073f974 53763aae
+		1f927d95 99c0b4f3 28be80c3 c6bce34c
+		7bf9b6bf afc6ccf5 f607ca05 59ca4b0a
+       27.90 real       140.13 user         0.86 sys
+           785563648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               60171  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   6  messages sent
+                   0  messages received
+                   0  signals received
+                 211  voluntary context switches
+               78842  involuntary context switches
+        615205107959  instructions retired
+        336936248214  cycles elapsed
+           665271872  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by groth16
+        1.59 real         4.52 user         0.12 sys
+           451870720  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               29167  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                5212  involuntary context switches
+         26056248309  instructions retired
+         11109922309  cycles elapsed
+           429545216  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.37 real         0.78 user         0.05 sys
+           160186368  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11188  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                2096  involuntary context switches
+          6201019649  instructions retired
+          2023880449  cycles elapsed
+           142874560  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_3 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 10170
+linear constraints: 0
+public inputs: 0
+private inputs: 16 (none belong to witness)
+public outputs: 1
+wires: 10187
+labels: 54453
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/mt_3.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/mt_3.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_js/mt_3.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_js/mt_3.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		df60c240 fe35df5e 8b4d8800 55bab7b3
+		19d8088b 68876fad 1237f5c7 0da13d46
+		2ee4f4b6 e5dbde2b b22177d6 999574a3
+		d03ec26e 25d286e1 4b80d665 40ee607b
+       50.18 real       308.00 user         1.81 sys
+          1149435904  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               95185  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   6  messages sent
+                   0  messages received
+                   0  signals received
+                 133  voluntary context switches
+              142814  involuntary context switches
+       1319659560441  instructions retired
+        734539438440  cycles elapsed
+           973577472  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by groth16
+        2.83 real         8.04 user         0.17 sys
+           555368448  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               35651  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                5498  involuntary context switches
+         46015767129  instructions retired
+         19674997557  cycles elapsed
+           516790272  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.36 real         0.78 user         0.05 sys
+           161169408  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11264  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+                2053  involuntary context switches
+          6142679082  instructions retired
+          2007133588  cycles elapsed
+           143874048  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_4 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 21018
+linear constraints: 0
+public inputs: 0
+private inputs: 32 (none belong to witness)
+public outputs: 1
+wires: 21051
+labels: 112533
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/mt_4.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/mt_4.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_js/mt_4.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_js/mt_4.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		c6dc3f9c 4c65ae03 4b49d533 fa1ede82
+		f171770f 24e23e83 2c6a39eb b5bdfae9
+		35250b87 5c44b81e 9e4bb062 325f0cd1
+		32f5ad53 3459eecf 707083e6 e8e63bbe
+      112.97 real       640.52 user         4.30 sys
+          1839153152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              162829  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   6  messages sent
+                   0  messages received
+                   0  signals received
+                3455  voluntary context switches
+              390698  involuntary context switches
+       2749749688017  instructions retired
+       1529950254315  cycles elapsed
+          1655287488  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by groth16
+        5.16 real        14.51 user         0.31 sys
+           776241152  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               60560  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  13  voluntary context switches
+                9008  involuntary context switches
+         83792917546  instructions retired
+         35566732739  cycles elapsed
+           629411584  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.36 real         0.76 user         0.04 sys
+           158744576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11102  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                1851  involuntary context switches
+          6053992210  instructions retired
+          1947180780  cycles elapsed
+           141366976  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_5 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 42714
+linear constraints: 0
+public inputs: 0
+private inputs: 64 (none belong to witness)
+public outputs: 1
+wires: 42779
+labels: 228693
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/mt_5.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/mt_5.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_js/mt_5.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_js/mt_5.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		5368e730 e996ac70 aefc396e 4578520b
+		e4fcc0f7 9e8e144e d54390a5 35e4d41e
+		75db2f28 3e7046aa 0be136d7 df33b906
+		362d5c33 2cd20366 4f96be7f 47129a8d
+      227.80 real      1344.63 user        10.49 sys
+          2778742784  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              309738  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   1  block output operations
+                   6  messages sent
+                   0  messages received
+                   0  signals received
+                6176  voluntary context switches
+              926016  involuntary context switches
+       5733884098158  instructions retired
+       3216136220591  cycles elapsed
+          2921199168  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by groth16
+        9.88 real        27.07 user         0.59 sys
+          1183744000  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              111842  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  43  voluntary context switches
+               13623  involuntary context switches
+        158345348054  instructions retired
+         66512685521  cycles elapsed
+           894831808  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.37 real         0.78 user         0.05 sys
+           158334976  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11086  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                1921  involuntary context switches
+          6185517819  instructions retired
+          2006470784  cycles elapsed
+           140940928  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_6 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 86106
+linear constraints: 0
+public inputs: 0
+private inputs: 128 (none belong to witness)
+public outputs: 1
+wires: 86235
+labels: 461013
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/mt_6.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/mt_6.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_js/mt_6.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_js/mt_6.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		edc7270e d3200541 57e59e1e a0ef779a
+		112223ce c9191156 599d5be2 010d0ce2
+		ee84877b 966c92f1 b7de303d e91925b6
+		4a61e7c0 8708b405 9d4ae787 6039a356
+     5207.94 real      2701.33 user        51.28 sys
+          4205395968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             5708583  page reclaims
+                 528  page faults
+                   0  swaps
+                   0  block input operations
+                   4  block output operations
+                   6  messages sent
+                   0  messages received
+                   0  signals received
+               14894  voluntary context switches
+             2568827  involuntary context switches
+      11617466348667  instructions retired
+       6546527988277  cycles elapsed
+          5654306368  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: groth16
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by groth16
+       19.52 real        50.54 user         1.15 sys
+          2102640640  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              238142  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                  72  voluntary context switches
+               32513  involuntary context switches
+        299644433792  instructions retired
+        124573035017  cycles elapsed
+          1724517440  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+        0.43 real         0.77 user         0.05 sys
+           158875648  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11100  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   1  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                2416  involuntary context switches
+          6154295608  instructions retired
+          1993198201  cycles elapsed
+           141498048  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/gmimc/mt_7 in groth16 ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 233
+non-linear constraints: 172890
+linear constraints: 0
+public inputs: 0
+private inputs: 256 (none belong to witness)
+public outputs: 1
+wires: 173147
+labels: 925653
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/mt_7.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/mt_7.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_js/mt_7.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_js/mt_7.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating groth16 zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1

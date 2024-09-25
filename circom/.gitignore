@@ -1,1 +1,3 @@
-# This folder is intentionally kept empty
+node_modules
+/bench/.ptau
+**/circuit_gen/

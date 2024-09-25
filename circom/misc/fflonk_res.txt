@@ -1,0 +1,2040 @@
+[Running] bash "/Users/guohanze/Documents/zklib/zklib_circom/bench/fflonk.sh"
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_0 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 1320
+linear constraints: 0
+public inputs: 0
+private inputs: 2
+public outputs: 1
+wires: 1323
+labels: 1777
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/mt_0.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/mt_0.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_js/mt_0.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_0_js/mt_0.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 11
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   2048
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          1766
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   1764
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     443
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+        1.03 real         2.59 user         0.13 sys
+           369065984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               24785  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+                7760  involuntary context switches
+         15215265463  instructions retired
+          6531143939  cycles elapsed
+           323844544  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 11
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   2048
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          1766
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   1764
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     443
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 8192
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 8192
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 6141
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 1838482088261740193145087220002932120628518938580993532357323019169868863403
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 2678535403778450168653052356262713588100616656796603978622099326047785616536
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 20636066297802852162687942868388045635066582820947600493468543790141228641318
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 4912145556469155527272616219247818498577815339216989091937568184711353460252
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 2750925519199095814440771127544371704464584992352446805398129075629220335933
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+        2.45 real         6.28 user         0.23 sys
+           535478272  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               43734  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  83  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+               10800  involuntary context switches
+         33535420670  instructions retired
+         15576852125  cycles elapsed
+           415439680  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 11
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   2048
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  1838482088261740193145087220002932120628518938580993532357323019169868863403
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 2678535403778450168653052356262713588100616656796603978622099326047785616536
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    20636066297802852162687942868388045635066582820947600493468543790141228641318
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 4912145556469155527272616219247818498577815339216989091937568184711353460252
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     2750925519199095814440771127544371704464584992352446805398129075629220335933
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.43 real         0.78 user         0.05 sys
+           159678464  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11118  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2256  involuntary context switches
+          6114026716  instructions retired
+          1997576651  cycles elapsed
+           142383232  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_1 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 3960
+linear constraints: 0
+public inputs: 0
+private inputs: 4
+public outputs: 1
+wires: 3965
+labels: 5325
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/mt_1.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/mt_1.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_js/mt_1.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_1_js/mt_1.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 13
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   8192
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          5294
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   5290
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     1329
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+        1.88 real         6.46 user         0.27 sys
+           672055296  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               54884  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                   0  messages received
+                   0  signals received
+                   3  voluntary context switches
+               11998  involuntary context switches
+         31135411413  instructions retired
+         16087775753  cycles elapsed
+           538921600  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 13
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   8192
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          5294
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   5290
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     1329
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 32768
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 32768
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 24573
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 20545036236893166789423726654447045251039022747300419883600478233915778210303
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 6079902156958654035580777938663690914963732901882860604838415144432900761085
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 826609770610523629713470858995735930494126364363209109184356500461821055307
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 10512107863258089743657303730468218707527408071784907763592346936063412268567
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 12493377853832366941463281789642539338499472970032803472585206346146830773683
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+        7.16 real        19.20 user         0.58 sys
+          1078558720  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               82453  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  83  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+               26023  involuntary context switches
+        102391500062  instructions retired
+         47336290401  cycles elapsed
+           544643904  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 13
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   8192
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  20545036236893166789423726654447045251039022747300419883600478233915778210303
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 6079902156958654035580777938663690914963732901882860604838415144432900761085
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    826609770610523629713470858995735930494126364363209109184356500461821055307
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 10512107863258089743657303730468218707527408071784907763592346936063412268567
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     12493377853832366941463281789642539338499472970032803472585206346146830773683
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.43 real         0.77 user         0.05 sys
+           159023104  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11078  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2541  involuntary context switches
+          6056131860  instructions retired
+          1999160237  cycles elapsed
+           141777216  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_2 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 9240
+linear constraints: 0
+public inputs: 0
+private inputs: 8
+public outputs: 1
+wires: 9249
+labels: 12421
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/mt_2.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/mt_2.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_js/mt_2.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_2_js/mt_2.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 14
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   16384
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          12350
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   12342
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     3101
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+        2.91 real        11.52 user         0.36 sys
+           925204480  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               59809  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                   0  messages received
+                   0  signals received
+                  10  voluntary context switches
+               17986  involuntary context switches
+         51717155514  instructions retired
+         28302842158  cycles elapsed
+           558766912  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 14
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   16384
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          12350
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   12342
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     3101
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 65536
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 65536
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 49149
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 6085581055018764121942117686870549415294931835705703802360974771992216772958
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 10847952325715023860953013156519464948822577294697016152370076684694975337409
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 18271103127823028145779066566487480948687002927302937428867333472468924968229
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 6736841836639869974238930439036117550419941257316804004105639785478583223695
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 21698359652696832255831517749046560657367834371567456932077374144382687096539
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+       13.48 real        36.02 user         1.30 sys
+          1508851712  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              253633  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  83  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+               42242  involuntary context switches
+        192181681221  instructions retired
+         89191053624  cycles elapsed
+           729815936  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 14
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   16384
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  6085581055018764121942117686870549415294931835705703802360974771992216772958
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 10847952325715023860953013156519464948822577294697016152370076684694975337409
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    18271103127823028145779066566487480948687002927302937428867333472468924968229
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 6736841836639869974238930439036117550419941257316804004105639785478583223695
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     21698359652696832255831517749046560657367834371567456932077374144382687096539
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.42 real         0.77 user         0.05 sys
+           158842880  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11057  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                2118  involuntary context switches
+          6118532210  instructions retired
+          1976553091  cycles elapsed
+           141564096  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_3 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 19800
+linear constraints: 0
+public inputs: 0
+private inputs: 16
+public outputs: 1
+wires: 19817
+labels: 26613
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/mt_3.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/mt_3.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_js/mt_3.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_3_js/mt_3.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 15
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   32768
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          26462
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   26446
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     6645
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+        5.14 real        21.63 user         0.79 sys
+          1468334080  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              139067  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                   0  messages received
+                   0  signals received
+                  18  voluntary context switches
+               31543  involuntary context switches
+         93790121915  instructions retired
+         53402113974  cycles elapsed
+           984743744  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 15
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   32768
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          26462
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   26446
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     6645
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 100000/131072
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 131072
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 131072
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 98301
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 19150167518536174267707369335361910200396420414909766647419806436800964026271
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 11672795837996003223450364607070767868230940119546236321568238564089175086255
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 100000/131072
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 21437817679279729958486524079301194935395805359890059341918374061645447091176
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 7933328699546772109557295033126148026770914576434790251487135405048566174844
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 13956113769387963829575312849866833375994629348901197531110386818863108671817
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+       25.88 real        67.66 user         2.23 sys
+          2375974912  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              438129  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  85  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+               63462  involuntary context switches
+        361283460975  instructions retired
+        166734399613  cycles elapsed
+          1281413504  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 15
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   32768
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  19150167518536174267707369335361910200396420414909766647419806436800964026271
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 11672795837996003223450364607070767868230940119546236321568238564089175086255
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    21437817679279729958486524079301194935395805359890059341918374061645447091176
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 7933328699546772109557295033126148026770914576434790251487135405048566174844
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     13956113769387963829575312849866833375994629348901197531110386818863108671817
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.37 real         0.76 user         0.04 sys
+           157794304  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10997  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                1419  involuntary context switches
+          6060135948  instructions retired
+          1944559564  cycles elapsed
+           140581312  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_4 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 40920
+linear constraints: 0
+public inputs: 0
+private inputs: 32
+public outputs: 1
+wires: 40953
+labels: 54997
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/mt_4.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/mt_4.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_js/mt_4.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_4_js/mt_4.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 16
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   65536
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          54686
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   54654
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     13733
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+        9.19 real        41.60 user         1.42 sys
+          2634137600  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              214665  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                   0  messages received
+                   0  signals received
+                  40  voluntary context switches
+               55444  involuntary context switches
+        177844542914  instructions retired
+        102131204089  cycles elapsed
+          1780023296  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 16
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   65536
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          54686
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   54654
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     13733
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 100000/262144
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 200000/262144
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 262144
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 262144
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 196605
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 698845250753702140859353808628113285699362722058684345048224412490653515145
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 20340865951676171345367916481191490566697503908141419706665041062916155962391
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 100000/262144
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 100000/262144
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 200000/262144
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 20125410328480423486095156060654476941817245594916734305717966814430448381490
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 2373788208741272021258547694562432403958198529732521475644746120041766229588
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 21220724635694061682469183514865710708604020934573450641932130909781156430696
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+       47.27 real       129.53 user         4.43 sys
+          3866951680  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              909671  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  88  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+              112191  involuntary context switches
+        692010790307  instructions retired
+        319260501461  cycles elapsed
+          2943491648  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 16
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   65536
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  698845250753702140859353808628113285699362722058684345048224412490653515145
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 20340865951676171345367916481191490566697503908141419706665041062916155962391
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    20125410328480423486095156060654476941817245594916734305717966814430448381490
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 2373788208741272021258547694562432403958198529732521475644746120041766229588
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     21220724635694061682469183514865710708604020934573450641932130909781156430696
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.37 real         0.77 user         0.04 sys
+           156925952  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10943  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                1524  involuntary context switches
+          6095479747  instructions retired
+          1970834954  cycles elapsed
+           139778752  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_5 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 83160
+linear constraints: 0
+public inputs: 0
+private inputs: 64
+public outputs: 1
+wires: 83225
+labels: 111765
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/mt_5.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/mt_5.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_js/mt_5.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_5_js/mt_5.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 17
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   131072
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          111134
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   111070
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     27909
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+       15.91 real        83.12 user         3.11 sys
+          4158291968  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              395224  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                   0  messages received
+                   0  signals received
+                 101  voluntary context switches
+              137155  involuntary context switches
+        350414016093  instructions retired
+        204419995918  cycles elapsed
+          3213742336  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 17
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   131072
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          111134
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   111070
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     27909
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 100000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 200000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 300000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 400000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 500000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 524288
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 524288
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 393213
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 13161245363397968143532962760598245991980207370496094676681861813250610618214
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 11821910411815736614636210207077947477668875675418130393747570266441771191953
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 100000/131072
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 100000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 200000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 100000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 200000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 300000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 400000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 500000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 1106095066916410445629597516987605175422531265784426322478871949123806203828
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 5702664592614487063544477376078333590652496908168291224549336968852403311220
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 6659322371497140833598939455498554636931364493227699527937333176658072666959
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+       88.71 real       246.18 user         7.09 sys
+          7469481984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1610630  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  96  messages sent
+                   0  messages received
+                   0  signals received
+                   2  voluntary context switches
+              139902  involuntary context switches
+       1333212448361  instructions retired
+        603463602774  cycles elapsed
+          5666854208  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 17
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   131072
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  13161245363397968143532962760598245991980207370496094676681861813250610618214
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 11821910411815736614636210207077947477668875675418130393747570266441771191953
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    1106095066916410445629597516987605175422531265784426322478871949123806203828
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 5702664592614487063544477376078333590652496908168291224549336968852403311220
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     6659322371497140833598939455498554636931364493227699527937333176658072666959
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.43 real         0.77 user         0.05 sys
+           158941184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               11062  page reclaims
+                   1  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                   1  voluntary context switches
+                1811  involuntary context switches
+          6070790867  instructions retired
+          1986754357  cycles elapsed
+           141580160  peak memory footprint
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_6 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 167640
+linear constraints: 0
+public inputs: 0
+private inputs: 128
+public outputs: 1
+wires: 167769
+labels: 225301
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/mt_6.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/mt_6.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_js/mt_6.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_6_js/mt_6.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 18
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   262144
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          224030
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   223902
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     56261
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+       31.62 real       168.08 user         6.51 sys
+          7709442048  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              724561  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                   0  messages received
+                   0  signals received
+                 234  voluntary context switches
+              355396  involuntary context switches
+        714737999809  instructions retired
+        413758282841  cycles elapsed
+          6290214336  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 18
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   262144
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          224030
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   223902
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     56261
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 100000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 200000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 300000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 400000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 500000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 600000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 700000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 800000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 900000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1000000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 1048576
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 1048576
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 786429
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 3379257228877644133107797415074592625969324905242958794782339146900559991441
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 18198429975926754760388946116272122901211859350117519042859383744925187757208
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 100000/262144
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 200000/262144
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 100000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 200000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 300000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 400000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 500000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 100000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 200000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 300000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 400000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 500000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 600000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 700000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 800000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 900000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1000000/1048576
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 11911109506892797306734197123484419869582568681075067763377826891518546491669
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 6917806184076698346457006369911597967846313264757170695673681304896392770969
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 12535434742101227319154418933984814238004552504098918643428687505470054025101
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+      193.56 real       474.79 user        35.25 sys
+          8328544256  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             7214347  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 110  messages sent
+                   0  messages received
+                   0  signals received
+                  62  voluntary context switches
+              783002  involuntary context switches
+       2634915897098  instructions retired
+       1221291160955  cycles elapsed
+         14186392576  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 18
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   262144
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  3379257228877644133107797415074592625969324905242958794782339146900559991441
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 18198429975926754760388946116272122901211859350117519042859383744925187757208
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    11911109506892797306734197123484419869582568681075067763377826891518546491669
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 6917806184076698346457006369911597967846313264757170695673681304896392770969
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     12535434742101227319154418933984814238004552504098918643428687505470054025101
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.47 real         0.78 user         0.05 sys
+           158121984  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10999  page reclaims
+                  12  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                 114  voluntary context switches
+                2471  involuntary context switches
+          6062835640  instructions retired
+          2003140165  cycles elapsed
+           140563584  peak memory footprint
+
+[Done] exited with code=0 in 461.039 seconds
+
+
+[Running] bash "/Users/guohanze/Documents/zklib/zklib_circom/bench/fflonk.sh"
+>> ---------- TEST CASE: circuits/test_vector/mimc/mt_7 in fflonk ----------
+>> 1.1 Compiling Circuit
+[32mtemplate instances[0m: 4
+non-linear constraints: 336600
+linear constraints: 0
+public inputs: 0
+private inputs: 256
+public outputs: 1
+wires: 336857
+labels: 452373
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7.r1cs
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7.sym
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/mt_7.cpp and /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/mt_7.dat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_cpp/main.cpp, circom.hpp, calcwit.hpp, calcwit.cpp, fr.hpp, fr.cpp, fr.asm and Makefile
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_js/mt_7.wat
+[32mWritten successfully:[0m /Users/guohanze/Documents/zklib/zklib_circom/bench/circuit_gen/mt_7_js/mt_7.wasm
+[32mEverything went okay[0m
+-------------------------------------------------------
+>> 1.2 Generating Witness
+-------------------------------------------------------
+>> 2.1 Generating fflonk zkey
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading PTau file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Getting curve from PTau settings
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading r1cs file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Processing FFlonk constraints
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK SETUP SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 19
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   524288
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          449822
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   449566
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     112965
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing k1 and k2
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w3
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w4
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing w8
+[32;22m[INFO]  [39;1msnarkJS[0m: > computing wr
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 1. Zkey Header
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 4. A Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 5. B Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 6. C Map
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 7. QL
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 8. QR
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 9. QM
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 10. QO
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 11. QC
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m:       writing sigma phase1: 500000/449566
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 15. Lagrange Polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 17. C0
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Writing Section 2. FFlonk Header
+[32;22m[INFO]  [39;1msnarkJS[0m: > Writing the zkey file finished
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK SETUP FINISHED
+       74.83 real       338.98 user        23.90 sys
+          9076703232  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2842685  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  39  messages sent
+                   0  messages received
+                   0  signals received
+                9460  voluntary context switches
+             1256955  involuntary context switches
+       1476109705919  instructions retired
+        864253239285  cycles elapsed
+         13090685632  peak memory footprint
+-------------------------------------------------------
+>> 2.5. Exporting Verification Key
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Detected protocol: fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: EXPORT VERIFICATION KEY FINISHED
+-------------------------------------------------------
+>> 3.1 Generating proof by fflonk
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK PROVE SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 19
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   524288
+[32;22m[INFO]  [39;1msnarkJS[0m:   Vars:          449822
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m:   Constraints:   449566
+[32;22m[INFO]  [39;1msnarkJS[0m:   Additions:     112965
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading witness file data
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 3. Additions
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing additions
+[32;22m[INFO]  [39;1msnarkJS[0m:     addition 100000/112965
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Sections 12,13,14. Sigma1, Sigma2 & Sigma 3
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma polynomials 
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading Sigma evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading Section 16. Powers of Tau
+[32;22m[INFO]  [39;1msnarkJS[0m: 
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing A, B, C wire polynomials
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading data from zkey file
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing A fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing B fft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Reading sections 7, 8, 9, 10, 11. Q selectors
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 100000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 200000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 300000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 400000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 500000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 600000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 700000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 800000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 900000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1000000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1100000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1200000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1300000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1400000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1500000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1600000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1700000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1800000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 1900000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:       T0 evaluation 2000000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m: buffer T0: 2097152
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 length: 2097152
+[32;22m[INFO]  [39;1msnarkJS[0m: T0 degree: 1572861
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 2
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges beta and gamma
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta: 5007858836693465517592474730702045997159431459999550677238318891781411714522
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 350072153958311434938201545880216808443331324625617012654945712982732868491
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Z polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 100000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 200000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 300000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 400000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m:     Z evaluation 500000/524288
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing Z fft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 100000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 200000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 300000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 400000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 500000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 600000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 700000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 800000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 900000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T1 evaluation 1000000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing T2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 100000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 200000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 300000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 400000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 500000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 600000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 700000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 800000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 900000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1000000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1100000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1200000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1300000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1400000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1500000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1600000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1700000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1800000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 1900000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m:     T2 evaluation 2000000/2097152
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2 / ZH
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2z ifft
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing C2 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 3
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge xi
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi: 15234412794057285880009030176645423079615466773548869489089545869549738121800
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 4
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge alpha
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 20932193149576590551306518356687714471492346327397031111957639147680987827125
+[32;22m[INFO]  [39;1msnarkJS[0m: > Reading C0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R0 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R1 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing R2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing F polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W1 multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: > ROUND 5
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenge y
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y: 4705627596769597720711914221664232251144979488744293705670994905667905336896
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing L polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZT polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' = L / ZTS2 polynomial
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing W' multi exponentiation
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK PROVER FINISHED
+      377.16 real       945.12 user        70.72 sys
+         10451992576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            14227872  page reclaims
+                  12  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                 139  messages sent
+                   0  messages received
+                   0  signals received
+               24962  voluntary context switches
+             1708202  involuntary context switches
+       5251940092880  instructions retired
+       2429272830222  cycles elapsed
+         16151691904  peak memory footprint
+-------------------------------------------------------
+>> 3.2 Verifying proof
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER STARTED
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m:   FFLONK VERIFY SETTINGS
+[32;22m[INFO]  [39;1msnarkJS[0m:   Curve:         bn128
+[32;22m[INFO]  [39;1msnarkJS[0m:   Circuit power: 19
+[32;22m[INFO]  [39;1msnarkJS[0m:   Domain size:   524288
+[32;22m[INFO]  [39;1msnarkJS[0m:   Public vars:   1
+[32;22m[INFO]  [39;1msnarkJS[0m: ----------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking commitments belong to G1
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking evaluations belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Checking public inputs belong to F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing challenges
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.beta:  5007858836693465517592474730702045997159431459999550677238318891781411714522
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.gamma: 350072153958311434938201545880216808443331324625617012654945712982732868491
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.xi:    15234412794057285880009030176645423079615466773548869489089545869549738121800
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.alpha: 20932193149576590551306518356687714471492346327397031111957639147680987827125
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· challenges.y:     4705627596769597720711914221664232251144979488744293705670994905667905336896
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Zero polynomial evaluation Z_H(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing Lagrange evaluations
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing polynomial identities PI(X)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing r0(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r1(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T0(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C1(h_1ω_4^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing r2(y)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T1(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing T2(xi)
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_2ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: ··· Computing C2(h_3ω_3^i) values
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing F
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing E
+[32;22m[INFO]  [39;1msnarkJS[0m: > Computing J
+[32;22m[INFO]  [39;1msnarkJS[0m: > Validate all evaluations with a pairing
+[32;22m[INFO]  [39;1msnarkJS[0m: PROOF VERIFIED SUCCESSFULLY
+[32;22m[INFO]  [39;1msnarkJS[0m: FFLONK VERIFIER FINISHED
+        0.40 real         0.76 user         0.05 sys
+           158826496  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               10864  page reclaims
+                 194  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  36  messages sent
+                   0  messages received
+                   0  signals received
+                 187  voluntary context switches
+                1634  involuntary context switches
+          6087869484  instructions retired
+          1981212549  cycles elapsed
+           141613504  peak memory footprint
+
+[Done] exited with code=0 in 460.117 seconds
