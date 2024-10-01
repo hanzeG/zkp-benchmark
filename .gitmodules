@@ -1,0 +1,3 @@
+[submodule "plonky2_bench"]
+	path = plonky2_bench
+	url = https://github.com/hanzeG/plonky2_bench.git
