@@ -1,3 +1,6 @@
 [submodule "plonky2_bench"]
 	path = plonky2_bench
 	url = https://github.com/hanzeG/plonky2_bench.git
+[submodule "halo2_bench"]
+	path = halo2_bench
+	url = https://github.com/hanzeG/halo2_bench.git
