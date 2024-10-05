@@ -4,3 +4,6 @@
 [submodule "halo2_bench"]
 	path = halo2_bench
 	url = https://github.com/hanzeG/halo2_bench.git
+[submodule "snarkjs_bench"]
+	path = snarkjs_bench
+	url = https://github.com/hanzeG/snarkjs_bench.git
