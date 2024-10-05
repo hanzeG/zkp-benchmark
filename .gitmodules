@@ -10,3 +10,6 @@
 [submodule "noir/noir-griffin"]
 	path = noir/noir-griffin
 	url = https://github.com/hanzeG/noir-griffin.git
+[submodule "noir/noir/noir-poseidon"]
+	path = noir/noir/noir-poseidon
+	url = https://github.com/TaceoLabs/noir-poseidon.git
