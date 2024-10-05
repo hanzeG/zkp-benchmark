@@ -7,3 +7,6 @@
 [submodule "snarkjs_bench"]
 	path = snarkjs_bench
 	url = https://github.com/hanzeG/snarkjs_bench.git
+[submodule "noir/noir-griffin"]
+	path = noir/noir-griffin
+	url = https://github.com/hanzeG/noir-griffin.git
