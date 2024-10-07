@@ -13,3 +13,6 @@
 [submodule "noir/noir-poseidon"]
 	path = noir/noir-poseidon
 	url = https://github.com/TaceoLabs/noir-poseidon.git
+[submodule "boojum_bench"]
+	path = boojum_bench
+	url = https://github.com/hanzeG/boojum_bench.git
