@@ -6,8 +6,8 @@ CIRCUIT_DIRS=(
     # "../test-circuit/sha256/h8"
     # "../test-circuit/sha256/h16"
     # "../test-circuit/sha256/h32"
-    "../test-circuit/sha256/h64"
-    "../test-circuit/sha256/h128"
+    # "../test-circuit/sha256/h64"
+    # "../test-circuit/sha256/h128"
 
     # "../test-circuit/mimc/h2"
     # "../test-circuit/mimc/h3"
@@ -26,11 +26,11 @@ CIRCUIT_DIRS=(
     # "../test-circuit/mimc/h16"
 
     # "../test-circuit/griffin/h3"
-    # "../test-circuit/griffin/h4"
+    "../test-circuit/griffin/h4"
     # "../test-circuit/griffin/h8"
 
     # "../test-circuit/poseidon/h2"
-    # "../test-circuit/poseidon/h3"
+    "../test-circuit/poseidon/h3"
     # "../test-circuit/poseidon/h4"
     # "../test-circuit/poseidon/h5"
     # "../test-circuit/poseidon/h6"
