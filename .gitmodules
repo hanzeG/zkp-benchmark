@@ -16,3 +16,6 @@
 [submodule "boojum_bench"]
 	path = boojum_bench
 	url = https://github.com/hanzeG/boojum_bench.git
+[submodule "zk-benchmark"]
+	path = zk-benchmark
+	url = https://github.com/celer-network/zk-benchmark.git

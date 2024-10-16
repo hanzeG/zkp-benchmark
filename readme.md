@@ -38,6 +38,8 @@ Tests are using variable libraries including `Circomlib`, `Noir stdlib`:
 
 ## Example Results
 
+![input_length](figures/input_length.svg)
+
 Example results from a trial run on an M1 MacBook Pro:
 
 ```json
