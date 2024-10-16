@@ -38,8 +38,7 @@ Tests are using variable libraries including `Circomlib`, `Noir stdlib`:
 
 ## Example Results
 
-![input_length](figures/input_length.png)
-![input_length](figures/input_length.svg)
+![input_length_runtime_ram](figures/input_length_runtime_ram.png)
 
 Example results from a trial run on an M1 MacBook Pro:
 
