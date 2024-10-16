@@ -1,0 +1,8 @@
+[package]
+name = "m4"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.33.0"
+
+[dependencies]
+poseidon = { path = "../../../noir-poseidon/poseidon" }
