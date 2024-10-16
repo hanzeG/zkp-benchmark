@@ -42,6 +42,12 @@ Tests are using variable libraries including `Circomlib`, `Noir stdlib`:
 
 ![merkle_tree_runtime_ram](figures/merkle_tree_runtime_ram.png)
 
+![merkle_tree_runtime_ram](figures/merkle_tree_runtime_ram.png)
+
+![ram](figures/ram.png)
+
+![runtime](figures/runtime.png)
+
 Example results from a trial run on an M1 MacBook Pro:
 
 ```json
